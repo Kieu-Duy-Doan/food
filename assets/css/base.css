@@ -1,0 +1,64 @@
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800); */
+@font-face {
+  font-family: "Beyond";
+  src: url(https://khoatranvn00.github.io/travelix/assets/font/beyond_the_mountains.otf);
+}
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color:#333;
+    --primary-color: #fa9e1b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: inherit;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Fredoka', sans-serif;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+/* btn animation */
+
+.btn-wrap {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 160px;
+    height: 47px;
+}
+
+.header-picture__animation {
+    position: absolute;
+    height: 100%;
+    width: 200%;
+    background: linear-gradient(to right, #fa9e1b, #8d4fff, #fa9e1b);
+    transform: translateX(0);
+    transition: transform linear 0.3s;
+}
+
+.btn {
+    min-width: 130px;
+    padding: 15px 0;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+}
+
+.btn-wrap:hover .header-picture__animation {
+    transform: translateX(-140px);
+}
+

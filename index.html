@@ -73,7 +73,7 @@
                 </div>
             </div>
 
-            <div class="header-nav">
+            <header>
                 <div class="grid wide">
                     <div class="herder-nav__wrap">
                         <div class="herder-nav__logo">
@@ -107,7 +107,7 @@
                         </label>
                     </div>
                 </div>
-            </div>
+            </header>
             <div class="header-picture">
                 <h1 class="header-picture__heading">DISCOVER</h1>
                 <span class="header-picture__title">the world</span>
@@ -841,7 +841,20 @@
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if($(this).scrollTop()) {
+                    $('header').addClass('header-nav-scroll');
+                }
+                else {
+                    $('header').removeClass('header-nav-scroll'); 
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
